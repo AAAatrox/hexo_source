@@ -38,17 +38,23 @@ git remote add 名字 地址
 git remote rm 名字
 ```
 
-### 从版本中删除(?)
+- 从版本中删除文件(?)
 
 ```bash
 git rm 文件 --cached
 ```
 
-[博客园](http://www.cnblogs.com/flying_bat/p/4172435.html)
-[stackoverflow](https://stackoverflow.com/a/30274113/10336529)
+> [博客园](http://www.cnblogs.com/flying_bat/p/4172435.html)
+> [stackoverflow](https://stackoverflow.com/a/30274113/10336529)
 
 ```bash
 git filter-branch --tree-filter 'rm -f {file}' HEAD
+```
+
+- 不跟踪已删除的文件
+
+```bash
+git add --update
 ```
 
 - 删除本地分支
