@@ -14,6 +14,14 @@ sudo apt install php7.2-cgi
 
 [phpstorm注册网站](idea.lanyus.com)
 
+# 本地php命令
+
+## 本地php服务
+
+```bash
+php -S localhost:6060 -t .
+```
+
 # html加载php
 
 ## 注意:
