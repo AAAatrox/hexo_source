@@ -1,5 +1,5 @@
 ---
-title: window从0开始配置
+title: win10配置
 updated: 1554288179
 date: 2019-03-23 10:46:29
 tags:
