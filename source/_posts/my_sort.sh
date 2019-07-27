@@ -1,4 +1,4 @@
-cd ~/blog/source
+# cd ~/blog/source
 version=$(uname)
 echo "${version}"
 for filename in ~/blog/source/_posts/*.md
@@ -38,4 +38,4 @@ do
     fi
   fi
 done
-cd -
+# cd -

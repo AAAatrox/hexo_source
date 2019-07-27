@@ -1,12 +1,12 @@
 ---
 title: php笔记
-updated: 1555841472
+updated: 1564237692
 date: 2019-04-21 16:47:01
 tags:
  - php
 ---
 
-> 乱七八糟的东西
+# 关于phpstorm安装
 
 ```bash
 sudo apt install php7.2-cgi
