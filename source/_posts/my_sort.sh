@@ -1,7 +1,7 @@
 # cd ~/blog/source
 version=$(uname)
 echo "${version}"
-for filename in ~/blog/source/_posts/*.md
+for filename in ~/aatrox/source/_posts/*.md
 do
   old=$(sed -n "3p" ${filename}) # 提取第3行
   new="${old#updated}" # 除去updated项
