@@ -1,6 +1,6 @@
 ---
 title: npm笔记
-updated: 1564289090
+updated: 1564289214
 date: 2019-03-05 19:07:18
 tags:
  - npm
@@ -43,9 +43,9 @@ sudo npm install
 npm install $(ls node_modules/) --save
 ```
 
- - 关于`@`开头的包说明
-   - [stackoverflow](https://stackoverflow.com/questions/36293481/use-of-symbol-in-node-module-names)
-   - [stackoverflow(dup)](https://stackoverflow.com/questions/36667258/what-is-the-meaning-of-the-at-prefix-on-npm-packages)
+> 关于`@`开头的包说明
+ - [stackoverflow](https://stackoverflow.com/questions/36293481/use-of-symbol-in-node-module-names)
+ - [stackoverflow(dup)](https://stackoverflow.com/questions/36667258/what-is-the-meaning-of-the-at-prefix-on-npm-packages)
 
 - 查看已安装的npm包
 
