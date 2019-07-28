@@ -6,6 +6,7 @@ else
 	echo "\033[1;32mAdding...\033[0m"
 	git add my_update.sh
 	git add _config.yml
+	git add package.json
 	git add source
 	git commit -m $1
 	echo "\033[1;33mPushing...\033[0m"
