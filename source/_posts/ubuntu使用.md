@@ -1,6 +1,6 @@
 ---
 title: ubuntu使用
-updated: 1561108590
+updated: 1564289090
 date: 2019-02-25 22:26:14
 tags:
  - ubuntu
@@ -205,3 +205,8 @@ sudo add-apt-repository ppa:fontforge/fontforge
 sudo apt-get update
 sudo apt-get install fontforge
 ```
+
+## 文件编码
+
+- [enca等](https://blog.csdn.net/jnbbwyth/article/details/6991425)
+- [iconv](https://linux.cn/article-7959-1.html)

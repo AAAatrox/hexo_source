@@ -1,25 +1,19 @@
 ---
 title: npm笔记
-updated: 1553700971
+updated: 1564289090
 date: 2019-03-05 19:07:18
 tags:
  - npm
  - unpkg
 ---
 
-- 查看已安装软件
-
-```bash
-sudo npm list -g --depth=0
-```
-
-## 创建到发布
+# 创建到发布
 
 - [比较详细的教程:cnblogs](https://www.cnblogs.com/penghuwan/p/6973702.html)
 - [教程索引:简书](https://www.jianshu.com/p/60ac7fe6edce)
 
 ```bash
-npm init
+npm init # 创建package.json
 npm login
 ...
 npm publish
@@ -27,12 +21,36 @@ npm publish
 
 ## 安装
 
-切换到你要安装npm包的目录
+参考:[思否](https://segmentfault.com/a/1190000007624021)
+
+- 安装单个包
 
 ```bash
-sudo npm init
-...
 sudo npm i $package
+sudo npm i $package --save # 记录在package.json的dependencies下
+sudo npm i $package --save-dev #记录在devSependencies下
+```
+
+- 按照`package.json`来安装
+
+```bash
+sudo npm install
+```
+
+- 讲`node_modules`下的包记录到`package.json`中(待改进),[stackoverflow](https://stackoverflow.com/questions/29276345/npm-save-installed-packages-as-dependencies)
+
+```bash
+npm install $(ls node_modules/) --save
+```
+
+ - 关于`@`开头的包说明
+   - [stackoverflow](https://stackoverflow.com/questions/36293481/use-of-symbol-in-node-module-names)
+   - [stackoverflow(dup)](https://stackoverflow.com/questions/36667258/what-is-the-meaning-of-the-at-prefix-on-npm-packages)
+
+- 查看已安装的npm包
+
+```bash
+sudo npm list -g --depth=0
 ```
 
 ## 常见问题
@@ -43,11 +61,9 @@ sudo npm i $package
 
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 
- ---
+# npm使用unpkg([官网翻译](https://yq.aliyun.com/articles/592213))
 
-## npm使用unpkg([官网翻译](https://yq.aliyun.com/articles/592213))
-
-### unpkg 是什么
+## unpkg 是什么
 
 unpkg 是一个内容源自 npm 的全球快速 CDN.
 
@@ -55,7 +71,7 @@ unpkg 是一个内容源自 npm 的全球快速 CDN.
 
 它能以快速而简单的方式提供任意包、任意文件,通过类似这样的URL:`unpkg.com/:package@:version/:file`
 
-### 怎样使用unpkg
+## 怎样使用unpkg
 
 使用固定的版本号:
 
@@ -85,19 +101,19 @@ unpkg 是一个内容源自 npm 的全球快速 CDN.
 
 `unpkg.com/lodash/`
 
-### 查询参数
+## 查询参数
 
-#### ?meta
+### ?meta
 
 以`JSON`格式返回包的元数据(metadata)(例如: /any/file?meta)
 
-#### ?module
+### ?module
 
 展开`javascript`模块里所有"bare"`import`为unpkg网址.此功能为初步实验性质的
 
 > 具体的实现和更多介绍可参考此仓库:`babel-plugin-unpkg`
 
-### UNPKG上的发布流程
+## UNPKG上的发布流程
 
 如果你是npm包作者,只要发布到npm仓库,unpkg替你减轻了发布到CDN的麻烦.仅需npm包中包含UMD构建即可(并非在代码仓库里包含,两者不同!)
 
