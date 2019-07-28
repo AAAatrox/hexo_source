@@ -9,12 +9,15 @@ else
 	git add package.json
 	git add source
 	git commit -m $1
-	echo "\033[1;33mPushing...\033[0m"
-	if [ "$2"x != x ]
+
+	if [ ${#2} -ge 1 ]
 	then
-		hexo cl && hexo g && hexo d
+		echo "\033[1;34mPushing...\033[0m"
 		git push origin master
-	else
-		echo "\033[1;34mAbort\033[0m"
+		if [ ${#2} -ge 2 ]
+		then
+			echo "\033[1;33mDeploying...\033[0m"
+			hexo cl && hexo g && hexo d
+		fi
 	fi
 fi
