@@ -18,6 +18,9 @@ else
 
   if [ ${#2} -ge 1 ]
   then
+    echo "\033[1;34mPay attention to the repository:\033[0m"
+    git remote -v
+    sleep 1
     echo "\033[1;34mPushing...\033[0m"
     git push origin master
     if [ ${#2} -ge 2 ]
