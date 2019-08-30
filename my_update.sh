@@ -1,6 +1,12 @@
 if [ "$1"x = x ]
 then
-  echo "\033[1;31mNeed message\033[0m"
+  echo "\033[1;31mEXAMPLE\033[0m"
+  echo "\033[1;35mhave param 1 for git commit:\033[0m"
+  echo "\033[1;36m  zsh my_update.sh first\033[0m"
+  echo "\033[1;35mparam 2 is longer than 1 for push to repository:\033[0m"
+  echo "\033[1;36m  zsh my_update.sh first 1\033[0m"
+  echo "\033[1;35mparam 2 is longer than 2 for hexo deployment:\033[0m"
+  echo "\033[1;36m  zsh my_update.sh first 12\033[0m"
 else
   zsh source/_posts/my_sort.sh
   echo "\033[1;32mAdding...\033[0m"
