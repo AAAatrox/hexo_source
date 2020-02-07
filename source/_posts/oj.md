@@ -26,13 +26,13 @@ tags:
  - prime
 - ~~单源最短路径~~
  - ~~dijkstra~~
-- 多源最短路径
- - floyd
+- ~~多源最短路径~~
+ - ~~floyd~~
 - 图的连通性
  - tarjan
 - 匹配与覆盖
- - 匈牙利算法
- - KM算法
+ - 匈牙利算法(最大匹配)
+ - KM算法(最佳匹配)
 - 最大流
  - Ford Fulkerson
  - Edmonds Karp
@@ -53,5 +53,5 @@ tags:
 # c++
 
 - 堆
-- 优先队列
+- ~~优先队列~~
 - hash表
