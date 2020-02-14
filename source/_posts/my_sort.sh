@@ -1,7 +1,7 @@
 # cd ~/aaaatrox/source
 version=$(uname)
 echo "${version}"
-for filename in ~/aaaatrox/source/_posts/*.md
+for filename in /home/lynx/aaaatrox/source/_posts/*.md
 do
   old=$(sed -n "3p" ${filename}) # 提取第3行
   new="${old#updated}" # 除去updated项
