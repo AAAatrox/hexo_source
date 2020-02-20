@@ -28,18 +28,18 @@ tags:
  - ~~dijkstra~~
 - ~~多源最短路径~~
  - ~~floyd~~
-- 图的连通性
- - tarjan
+- ~~图的连通性~~
+ - ~~tarjan~~
 - 匹配与覆盖
  - ~~匈牙利算法(最大匹配)~~
  - KM算法(最佳匹配)
-- 最大流
+- 网络流
  - Ford Fulkerson
  - Edmonds Karp
  - Dinic
 
-- 串匹配
- - KMP
+- ~~串匹配~~
+ - ~~KMP~~
 
 - 矩阵
 
