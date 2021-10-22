@@ -81,5 +81,5 @@ theme: ejs_2
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/aaaatrox/aaaatrox.github.io.git
+  repository: https://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@github.com/aaaatrox/aaaatrox.github.io.git
   branch: master
